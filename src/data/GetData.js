@@ -5,7 +5,7 @@ export const useData = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const req = await fetch("./Data.json");
+      const req = await fetch("http://localhost:5000/api/data");
       const data = await req.json();
       setPosts(data.posts);
     };

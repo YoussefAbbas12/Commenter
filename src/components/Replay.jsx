@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Replay = ({ rootNumber=0, author, responses , isRoot ,result ,operand , operation }) => {
+const Replay = ({ rootNumber=0, author, responses , isRoot ,result ,operand , operation ,isAutharised }) => {
   const [expanded, setExpanded] = useState(false);
 
 //   if(!rootNumber&!author&!responses&!result&!operand&!operation){return "Loading..."}
@@ -24,6 +24,7 @@ const Replay = ({ rootNumber=0, author, responses , isRoot ,result ,operand , op
           <div className="responses">
           {responses.map((resp) => (
               <Replay
+              isAutharised={isAutharised}
               key={resp.id}
               rootNumber={resp.result}
               operation={resp.operation}

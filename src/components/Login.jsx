@@ -10,13 +10,14 @@ const Login = ({ onClose , onOpenSignUp  }) => {
 
         <form method='post'>
           <div className="form-group">
-            <label>Email</label>
-            <input type="email" placeholder="your.email@example.com" />
+            <label>Username</label>
+            <input type="text" name='username' placeholder="Choose a username" />
           </div>
           <div className="form-group">
             <label>Password</label>
-            <input type="password" placeholder="Enter your password" />
+            <input type="password" name='password' placeholder="Enter your password" />
           </div>
+          <button className="submit-btn" type='submit'>Submit</button>
         </form>
 
         <p className="sign-p">
