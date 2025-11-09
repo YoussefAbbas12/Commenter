@@ -15,7 +15,7 @@ const Replay = ({ rootNumber=0, author, responses , isRoot ,result ,operand , op
       </div>
 
       {responses && responses.length > 0 && (
-          <div className="expand-btn">
+          <div className="expand-btn" onClick={() => setExpanded(!expanded)}>
           {expanded ? "-" + responses.length : "+" + responses.length}
         </div>
       )}

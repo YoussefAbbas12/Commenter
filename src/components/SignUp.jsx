@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SignUp = ({ onClose }) => {
+const SignUp = ({ onClose , onOpenLogin }) => {
   return (
     <div className="signup-model-overlay">
       <div className="signup-modal">
@@ -28,7 +28,7 @@ const SignUp = ({ onClose }) => {
         </form>
 
         <p className="sign-p">
-          Already have an account? <a href="#">Login</a>
+          Already have an account? <a onClick={onOpenLogin} href="#"><p onClick={onClose} style={{display:"inline"}}>Login</p></a>
         </p>
       </div>
     </div>

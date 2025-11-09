@@ -7,7 +7,7 @@ const PostContainer = () => {
 
   if (!posts) return <p>Loading posts...</p>; 
 
-  console.log(posts)
+  // console.log(posts)
   return (
     <main className="main-post">
       <div className="sign-bar">
