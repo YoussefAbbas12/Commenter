@@ -1,0 +1,126 @@
+{
+    "posts": [
+      {
+        "id": "post1",
+        "rootNumber": 10,
+        "author": "Alice",
+        "timestamp": "2025-11-08T10:00:00Z",
+        "responses": [
+          {
+            "id": "resp1",
+            "operation": "+",
+            "operand": 5,
+            "result": 15,
+            "author": "Bob",
+            "timestamp": "2025-11-08T10:15:00Z",
+            "responses": [
+              {
+                "id": "resp2",
+                "operation": "×",
+                "operand": 2,
+                "result": 30,
+                "author": "Charlie",
+                "timestamp": "2025-11-08T10:30:00Z",
+                "responses": []
+              },
+              {
+                "id": "resp3",
+                "operation": "÷",
+                "operand": 3,
+                "result": 5,
+                "author": "Diana",
+                "timestamp": "2025-11-08T10:45:00Z",
+                "responses": []
+              }
+            ]
+          },
+          {
+            "id": "resp4",
+            "operation": "-",
+            "operand": 3,
+            "result": 7,
+            "author": "Eve",
+            "timestamp": "2025-11-08T11:00:00Z",
+            "responses": [
+              {
+                "id": "resp5",
+                "operation": "+",
+                "operand": 8,
+                "result": 15,
+                "author": "Frank",
+                "timestamp": "2025-11-08T11:15:00Z",
+                "responses": []
+              }
+            ]
+          },
+          {
+            "id": "resp6",
+            "operation": "÷",
+            "operand": 2,
+            "result": 5,
+            "author": "Grace",
+            "timestamp": "2025-11-08T11:30:00Z",
+            "responses": []
+          }
+        ]
+      },
+      {
+        "id": "post2",
+        "rootNumber": 100,
+        "author": "Henry",
+        "timestamp": "2025-11-08T09:00:00Z",
+        "responses": [
+          {
+            "id": "resp7",
+            "operation": "÷",
+            "operand": 4,
+            "result": 25,
+            "author": "Iris",
+            "timestamp": "2025-11-08T09:30:00Z",
+            "responses": [
+              {
+                "id": "resp8",
+                "operation": "-",
+                "operand": 10,
+                "result": 15,
+                "author": "Jack",
+                "timestamp": "2025-11-08T10:00:00Z",
+                "responses": []
+              }
+            ]
+          },
+          {
+            "id": "resp9",
+            "operation": "-",
+            "operand": 50,
+            "result": 50,
+            "author": "Kate",
+            "timestamp": "2025-11-08T09:45:00Z",
+            "responses": []
+          }
+        ]
+      },
+      {
+        "id": "post3",
+        "rootNumber": 7,
+        "author": "Liam",
+        "timestamp": "2025-11-08T12:00:00Z",
+        "responses": [
+          {
+            "id": "resp10",
+            "operation": "×",
+            "operand": 3,
+            "result": 21,
+            "author": "Mia",
+            "timestamp": "2025-11-08T12:15:00Z",
+            "responses": []
+          }
+        ]
+      }
+    ],
+    "currentUser": {
+      "username": "Guest",
+      "isAuthenticated": false
+    }
+  }
+  
