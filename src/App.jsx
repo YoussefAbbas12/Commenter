@@ -12,6 +12,7 @@ function App() {
   const [userName , setUserName] = useState("Gest")
 
   const handleLogout = () => {
+    e.preventDefault();
     // مسح بيانات المستخدم
     localStorage.removeItem("username");
     localStorage.removeItem("isAuth");
@@ -64,10 +65,6 @@ function App() {
         }
       });
   };
-  
-
-  console.log(userName)
-
 
   return (
     <div className="app">

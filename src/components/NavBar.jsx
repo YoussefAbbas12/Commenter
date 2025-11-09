@@ -9,7 +9,7 @@ const NavBar = ({ onOpenSignUp, onOpenLogin , handleLogout }) => {
       <div className="nav-buttons">
         {isAutharised ? (
           <>
-            <p className="user-name"><i class="fa-solid fa-user"></i> {localStorage.getItem("username")}</p>
+            <p className="user-name"><i className="fa-solid fa-user"></i> {localStorage.getItem("username")}</p>
             <button
               onClick={handleLogout}
               className="nav-btn logout-btn">
